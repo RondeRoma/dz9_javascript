@@ -131,6 +131,9 @@ const users =  [
 //  console.log(getUsersWithFriend(users, 'Briana Decker'));
 
 
-//dz9-9
+dz9-9
 const getNamesSortedByFriendsCount = (array) => [...array].sort((a,b)=>a.friends.length -b.friends.length).map(({name}) => name);
 console.log(getNamesSortedByFriendsCount(users));
+
+//dz9-10
+// const getSortedUniqueSkills = (array) => array.reduce((skills, user) => skills.concat(user.skills), []).filter((user, index, skills) => skills.indexOf(user) === index).sort();
